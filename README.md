@@ -62,4 +62,10 @@ After completing the challenge and developing the solution code in your system, 
     ```
 
 
+## Expected Output
+The output can be similar to below
+
+![Expected outout image](Clinic-java-output.png)
+
+
 Good luck, and happy coding!
