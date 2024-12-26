@@ -1,56 +1,65 @@
 # Clinic Management System
 
+
 ## Problem Statement
 The **Clinic Management System** is a Java-based tool that helps to manage a Clinic by providing assistance in:
 - Admitting patients
-- Scheduling the appointment
-- Discharging patients
+- Scheduling the appointments
 - Updating appointments based on patients being admitted
+- Discharging patients
 
-## Features
-The `StockPortfolio` class includes the following functionalities:
-1. **Track Stock Details**
-   - Symbol (e.g., "AAPL").
-   - Quantity of shares.
-   - Buying price and current price.
 
-2. **Update Current Market Price**
-   - Adjusts the stock's current price.
-   - Monitors the highest price reached.
+## Steps to Follow
+1. This GitHub repository will be accessible to you once you accept the Playground Challenge.
+2. You have to work directly in this GitHub repository. It is like your own copy of the original repository.
 
-3. **Profit/Loss Calculation**
-   - Computes the profit/loss as:  
-     \[(\text{Current Price} - \text{Buying Price}) \times \text{Quantity}\]
+3. The folder structure is as given below:
+   ```
+   src
+   ├── Patient.java
+   ├── Clinic.java
+   └── ClinicManagementSystem.java
+   ```
 
-4. **Portfolio Value Calculation**
-   - Calculates the total value of holdings as:  
-     \[\text{Current Price} \times \text{Quantity}\]
+4. Review the code/comments present in above files to understand the structure.
+5. Implement the missing methods marked with **TODO** comments.
+6. To work on the files, you can clone this GitHub repository onto your system and then open it with an IDE like IntelliJ, or Eclipse.
+7. Once done, push your changes to this remote GitHub repository.
 
-## Implementation Details
 
-### Class Fields
-- `symbol`: Identifier for the stock (e.g., "AAPL").
-- `quantity`: Number of shares owned.
-- `buyingPrice`: Price at which the shares were purchased.
-- `currentPrice`: Current market price of the stock.
-- `highestPrice`: Highest price the stock has reached.
+## Files to Work On
+- `src/Patient.java`
+- `src/Clinic.java`
+- `src/ClinicManagementSystem.java`
 
-### Methods
-#### 1. Constructor
-Initializes stock details and sets:
-- Initial `currentPrice` and `highestPrice` to `buyingPrice`.
 
-#### 2. `updatePrice(double newPrice)`
-- Updates the `currentPrice`.
-- Updates the `highestPrice` if `newPrice` exceeds it.
-- Ensures `newPrice` is positive.
+## Requirements
+- **`Patient.java`**:
+  - Implement the getter and setter methods for Patient class.
 
-#### 3. `calculateProfit()`
-- Computes total profit/loss:  
-  \[(\text{Current Price} - \text{Buying Price}) \times \text{Quantity}\]
-- Returns a positive value for profit and a negative value for loss.
+- **`Clinic.java`**:
+  - Implement the `admitPatient` method to admit a patient.
+  - Implement the `getSchedule` method to schedule appointments (maximum 3 patients per day).
+  - Implement the `providedTreatment` method to provide treatment or prescription for a patient after their appointment
+  - Implement the `getPatientDetails` method to get the details of a patient
+  - Implement the `getAppointmentDetails` method to get the appointment details of a patient
+  - Implement the `dischargePatient` method to discharge a patient from the clinic
 
-#### 4. `getCurrentValue()`
-- Computes total value of holdings:  
-  \[\text{Current Price} \times \text{Quantity}\]
+- **`ClinicManagementSystem.java`**:
+  - Use this file to import and test the functionalities present in `Patient.java` and `Clinic.java` files.
 
+
+## Submission Guidelines
+After completing the challenge and developing the solution code in your system, commit and push the changes to this repository. 
+  - Stage your changes and commit the files:
+    ```
+    git add .
+    git commit -m "Completed playground challenge"
+    ```
+  - Push your changes to the GitHub repository:
+    ```
+    git push
+    ```
+
+
+Good luck, and happy coding!

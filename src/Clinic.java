@@ -20,7 +20,7 @@ class Clinic {
     // Admit a patient to the clinic
     public void admitPatient(Patient patient) {
         // Add the patient to the queue and print "Patient <name> admitted."
-        
+
         patientQueue.add(patient);
         System.out.println("Patient " + patient.getName() + " admitted.");
     }
